@@ -12,8 +12,16 @@ repositories {
     mavenCentral()
 }
 
+ext {
+    aspectjVersion = '1.9.2'
+    springVersion = '5.1.2.RELEASE'
+}
+
 dependencies {
-    compile group: 'org.aspectj', name: 'aspectjrt', version: '1.9.2'
-    compile group: 'org.aspectj', name: 'aspectjweaver', version: '1.9.2'
+    compile group: 'org.aspectj', name: 'aspectjrt', version: aspectjVersion
+    compile group: 'org.aspectj', name: 'aspectjweaver', version: aspectjVersion
+    compile group: 'org.springframework', name: 'spring-core', version: springVersion
+    compile group: 'org.springframework', name: 'spring-beans', version: springVersion
+    compile group: 'org.springframework', name: 'spring-context', version: springVersion
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
