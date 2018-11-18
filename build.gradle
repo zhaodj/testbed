@@ -24,4 +24,5 @@ dependencies {
     compile group: 'org.springframework', name: 'spring-beans', version: springVersion
     compile group: 'org.springframework', name: 'spring-context', version: springVersion
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.mockito', name: 'mockito-core', version: '2.+'
 }
