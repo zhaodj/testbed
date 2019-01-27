@@ -16,4 +16,10 @@ public class HamcrestTest {
         Assert.assertThat(x, both(not(equalTo(y))).and(notNullValue()));
     }
 
+    @Test(expected = RuntimeException.class)
+    public void testException(){
+        String test = null;
+        test.length();
+    }
+
 }
